@@ -6,8 +6,9 @@ using System.Windows.Forms;
 
 namespace PItech
 {
-    internal static class Program
+    static class Program
     {
+        
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
@@ -16,7 +17,7 @@ namespace PItech
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new CadastrarAdotante());
         }
     }
 }

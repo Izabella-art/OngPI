@@ -46,6 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Atualizar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Atualizar.Designer.cs">
+      <DependentUpon>Atualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarAdotante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarAdotante.Designer.cs">
+      <DependentUpon>CadastrarAdotante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarAnimal.Designer.cs">
+      <DependentUpon>CadastrarAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarUsuário.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastrarUsuário.Designer.cs">
+      <DependentUpon>CadastrarUsuário.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarPessoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultarPessoa.Designer.cs">
+      <DependentUpon>ConsultarPessoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstoqueDeDoações.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EstoqueDeDoações.Designer.cs">
+      <DependentUpon>EstoqueDeDoações.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Excluir.Designer.cs">
+      <DependentUpon>Excluir.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +96,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Atualizar.resx">
+      <DependentUpon>Atualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarAdotante.resx">
+      <DependentUpon>CadastrarAdotante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarAnimal.resx">
+      <DependentUpon>CadastrarAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarUsuário.resx">
+      <DependentUpon>CadastrarUsuário.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarPessoa.resx">
+      <DependentUpon>ConsultarPessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstoqueDeDoações.resx">
+      <DependentUpon>EstoqueDeDoações.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir.resx">
+      <DependentUpon>Excluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +142,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-10 171511.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
