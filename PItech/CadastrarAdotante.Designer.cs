@@ -48,8 +48,8 @@
             this.Gato = new System.Windows.Forms.Button();
             this.Preferencia = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.porte = new System.Windows.Forms.ComboBox();
+            this.idade = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // RG
@@ -234,6 +234,7 @@
             this.Gato.TabIndex = 50;
             this.Gato.Text = "Gato";
             this.Gato.UseVisualStyleBackColor = false;
+            this.Gato.Click += new System.EventHandler(this.Gato_Click);
             // 
             // Preferencia
             // 
@@ -259,31 +260,33 @@
             this.comboBox1.Text = "Sexo";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // porte
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.porte.FormattingEnabled = true;
+            this.porte.Items.AddRange(new object[] {
             "Pequeno",
             "Médio",
             "Grande"});
-            this.comboBox2.Location = new System.Drawing.Point(133, 248);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(165, 21);
-            this.comboBox2.TabIndex = 53;
-            this.comboBox2.Text = "Porte";
+            this.porte.Location = new System.Drawing.Point(133, 248);
+            this.porte.Name = "porte";
+            this.porte.Size = new System.Drawing.Size(165, 21);
+            this.porte.TabIndex = 53;
+            this.porte.Text = "Porte";
+            this.porte.SelectedIndexChanged += new System.EventHandler(this.porte_SelectedIndexChanged);
             // 
-            // comboBox3
+            // idade
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.idade.FormattingEnabled = true;
+            this.idade.Items.AddRange(new object[] {
             "Filhote",
             "Adulto",
             "Idoso"});
-            this.comboBox3.Location = new System.Drawing.Point(133, 282);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(165, 21);
-            this.comboBox3.TabIndex = 54;
-            this.comboBox3.Text = "Idade";
+            this.idade.Location = new System.Drawing.Point(133, 282);
+            this.idade.Name = "idade";
+            this.idade.Size = new System.Drawing.Size(165, 21);
+            this.idade.TabIndex = 54;
+            this.idade.Text = "Idade";
+            this.idade.SelectedIndexChanged += new System.EventHandler(this.idade_SelectedIndexChanged);
             // 
             // CadastrarAdotante
             // 
@@ -291,8 +294,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PItech.Properties.Resources.Captura_de_tela_2023_08_10_171511;
             this.ClientSize = new System.Drawing.Size(752, 423);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.idade);
+            this.Controls.Add(this.porte);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Preferencia);
             this.Controls.Add(this.Gato);
@@ -341,7 +344,7 @@
         private System.Windows.Forms.Button Gato;
         private System.Windows.Forms.Label Preferencia;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox porte;
+        private System.Windows.Forms.ComboBox idade;
     }
 }

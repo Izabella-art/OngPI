@@ -51,6 +51,7 @@
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.Size = new System.Drawing.Size(102, 20);
             this.maskedTextBox5.TabIndex = 21;
+            this.maskedTextBox5.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox5_MaskInputRejected);
             // 
             // DataDeNascimento
             // 
@@ -70,6 +71,7 @@
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(180, 20);
             this.maskedTextBox4.TabIndex = 19;
+            this.maskedTextBox4.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox4_MaskInputRejected);
             // 
             // Endereço
             // 
@@ -90,6 +92,7 @@
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(191, 20);
             this.maskedTextBox3.TabIndex = 17;
+            this.maskedTextBox3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
             // 
             // CPF
             // 
@@ -110,6 +113,7 @@
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(180, 20);
             this.maskedTextBox2.TabIndex = 15;
+            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
             // Telefone
             // 
@@ -129,6 +133,7 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(191, 20);
             this.maskedTextBox1.TabIndex = 13;
+            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // Nome
             // 
@@ -151,6 +156,7 @@
             this.label1.Size = new System.Drawing.Size(205, 29);
             this.label1.TabIndex = 11;
             this.label1.Text = "Cadastrar Usuário";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // RG
             // 
@@ -171,6 +177,7 @@
             this.maskedTextBox6.Name = "maskedTextBox6";
             this.maskedTextBox6.Size = new System.Drawing.Size(191, 20);
             this.maskedTextBox6.TabIndex = 23;
+            this.maskedTextBox6.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox6_MaskInputRejected);
             // 
             // CadastrarUsuário
             // 

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -41,12 +42,24 @@
             this.label1.Size = new System.Drawing.Size(318, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Estoque De Doações";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(98, 107);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 50);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Acessar Estoque";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // EstoqueDeDoações
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PItech.Properties.Resources.Captura_de_tela_2023_08_10_171511;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "EstoqueDeDoações";
             this.Size = new System.Drawing.Size(769, 448);
@@ -58,5 +71,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
