@@ -1,4 +1,5 @@
 ﻿using PItech;
+using PItechNovo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,9 +31,19 @@ namespace PItech
             dataGridView1.Columns[1].Name = "Nome";
             dataGridView1.Columns[2].Name = "Telefone";
             dataGridView1.Columns[3].Name = "endereco";
-            dataGridView1.Columns[4].Name = "RG";
+            dataGridView1.Columns[4].Name = "rg";
             dataGridView1.Columns[5].Name = "datanasc";
         }
+
+        public void ConfigurarDataGrid()
+        {
+            dataGridView1.AllowUserToAddRows = false; // adicionar linhas 
+            dataGridView1 .AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.AllowUserToResizeRows = false;
+
+            dataGridView1.ColumnCount = 6;
+        }// fim do metodo 
 
         public void NomeColunas()
         {
@@ -44,7 +55,7 @@ namespace PItech
             con.PreencherVetor();
             for (int i = 0; i < con.QuantidadeDados(); i++)
             {
-                dataGridView1.Rows.Add(con.cpf[i], con.nome[i], con.telefone[i], con.endereco[i], con.RG[i], con.datanasc[i]);
+                dataGridView1.Rows.Add(con.cpf[i], con.nome[i], con.telefone[i], con.endereco[i], con.rg[i], con.datanasc[i]);
 
             }//adicionando dados no datagrid view
         }

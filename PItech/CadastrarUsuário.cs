@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using MySql.Data.MySqlClient;
 using System.Security.Cryptography;
+using PItechNovo;
 
 namespace PItech
 {

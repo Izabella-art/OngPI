@@ -1,4 +1,5 @@
 ﻿using PItech;
+using PItechNovo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,13 +13,14 @@ using System.Windows.Forms;
 //Atualizar Pessoa
 namespace PItech
 {
+    
     public partial class Atualizar : UserControl
     {
-        DAO Atu;
+        DAO atu;
         public Atualizar()
         {
             InitializeComponent();
-            Atu= new DAO();
+            atu= new DAO();
         }
 
         private void ExcluirAnimal_Click(object sender, EventArgs e)
